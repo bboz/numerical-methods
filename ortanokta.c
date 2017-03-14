@@ -6,17 +6,17 @@ double fonk(double x)
 }
 int main(int argc, char *argv[])
 {
-  // burdaki veri tipini float yerine double olarak tanýmlasaydýk scanf de veri tipi karakterini %lf olarak deðiþtirmeliyiz.
+  // burdaki veri tipini float yerine double olarak tanÄ±mlasaydÄ±k scanf de veri tipi karakterini %lf olarak deÄŸiÅŸtirmeliyiz.
   double x1,x2; 
-  // float olarak tanýmladýðýmýzda x1=0 , x2=40 deðerini girdiðimizde 29 adýmda denklemin kokune ulaþýyoruz
-  // x1 ve x2 deðiþkenini double olarak tanýmladýðýmýzda 56 adýmda sonuca ulaþýyoruz sebebi : float tek duyarlý gerçel sayý (7 basamak), double çift duyarlý gerçel sayý (15 basamak)
+  // float olarak tanÄ±mladÄ±ÄŸÄ±mÄ±zda x1=0 , x2=40 deÄŸerini girdiÄŸimizde 29 adÄ±mda denklemin kokune ulaÅŸÄ±yoruz
+  // x1 ve x2 deÄŸiÅŸkenini double olarak tanÄ±mladÄ±ÄŸÄ±mÄ±zda 56 adÄ±mda sonuca ulaÅŸÄ±yoruz sebebi : float tek duyarlÄ± gerÃ§el sayÄ± (7 basamak), double Ã§ift duyarlÄ± gerÃ§el sayÄ± (15 basamak)
   printf("Ilk degere tahmini girin : ");
   scanf("%lf",&x1);
-  printf("Ikýncý degere tahmini girin : ");
+  printf("IkÄ±ncÄ± degere tahmini girin : ");
   scanf("%lf",&x2);
   if((fonk(x1)*fonk(x2))>0)
   {
-         printf("Girdiginiz degerler arasýnda kok yok\n");
+         printf("Girdiginiz degerler arasÄ±nda kok yok\n");
   }
   else if(fonk(x1)==0 || fonk(x2)==0)
   {
@@ -46,4 +46,4 @@ int main(int argc, char *argv[])
   }
   system("PAUSE");	
   return 0;
-}
+} 
